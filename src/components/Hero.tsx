@@ -10,11 +10,53 @@ export default function Hero() {
         ref={ref}
         className="fade-in-section max-w-4xl mx-auto text-center"
       >
+        <div className="flex justify-center mb-14">
+          <div>
+            <p
+              style={{
+                fontWeight: 800,
+                fontSize: 'clamp(42px, 9vw, 88px)',
+                letterSpacing: '-0.04em',
+                lineHeight: 1,
+                color: '#0f172a',
+                display: 'block',
+                userSelect: 'none',
+                textAlign: 'center',
+              }}
+            >
+              Project{' '}
+              <span
+                style={{
+                  background: 'linear-gradient(135deg, #0ea5e9 0%, #14b8a6 55%, #10b981 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
+              >
+                Echo
+              </span>
+            </p>
+            <p
+              style={{
+                textAlign: 'center',
+                fontSize: 'clamp(9px, 1.1vw, 12px)',
+                fontWeight: 500,
+                letterSpacing: '0.24em',
+                textTransform: 'uppercase',
+                color: '#94a3b8',
+                marginTop: '8px',
+              }}
+            >
+              Your Living Biographer
+            </p>
+          </div>
+        </div>
+
         <div className="flex justify-center mb-10">
           <EchoOrb size="lg" />
         </div>
 
-        <p className="section-label mb-5">Your Living Biographer</p>
+        <p className="section-label mb-5" style={{ opacity: 0, height: 0, marginBottom: 0 }}>Your Living Biographer</p>
 
         <h1
           style={{
